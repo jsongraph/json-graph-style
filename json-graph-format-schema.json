@@ -1,0 +1,272 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "description": "Style Schema",
+    "oneOf": [
+        {
+            "type": "object",
+            "properties": {
+                "graphStyle": {
+                    "$ref": "#/definitions/graphStyle"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "graphStyle"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "graphStyles": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/graphStyle"
+                    }
+                }
+            }
+        }
+    ],
+    "definitions": {
+        "graphStyle": {
+            "type": "object",
+            "properties": {
+                "canvas": {
+                    "$ref": "#/definitions/canvasRule"
+                },
+                "nodes": {
+                    "$ref": "#/definitions/nodeRules"
+                },
+                "edges": {
+                    "$ref": "#/definitions/edgeRules"
+                }
+            },
+            "required": [
+                "nodes"
+            ]
+        },
+        "canvasRule": {
+            "type": "object",
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "background-color": {
+                    "type": "string"
+                },
+                "metadata": {
+                    "type": [
+                        "object",
+                        "null"
+                    ]
+                }
+            },
+            "additionalProperties": false
+        },
+        "nodeRule": {
+            "type": "object",
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "attr": {
+                    "type": "string"
+                },
+                "operator": {
+                    "type": "string",
+                    "enum": [
+                        "==",
+                        "<=",
+                        ">=",
+                        "<",
+                        ">",
+                        "has",
+                        "all"
+                    ]
+                },
+                "compareValue": {
+                    "type": "string"
+                },
+                "styles": {
+                    "$ref": "#/definitions/nodeStyles"
+                },
+                "metadata": {
+                    "type": [
+                        "object",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "styles"
+            ],
+            "additionalProperties": false
+        },
+        "nodeRules": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/nodeRule"
+            },
+            "additionalItems": false
+        },
+        "edgeRule": {
+            "type": "object",
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "attr": {
+                    "type": "string"
+                },
+                "operator": {
+                    "type": "string",
+                    "enum": [
+                        "==",
+                        "<=",
+                        ">=",
+                        "<",
+                        ">",
+                        "has",
+                        "all"
+                    ]
+                },
+                "compareValue": {
+                    "type": "string"
+                },
+                "styles": {
+                    "$ref": "#/definitions/edgeStyles"
+                },
+                "metadata": {
+                    "type": [
+                        "object",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "operator"
+            ],
+            "additionalProperties": false
+        },
+        "edgeRules": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/edgeRule"
+            },
+            "additionalItems": false
+        },
+        "nodeStyles": {
+            "type": "object",
+            "properties": {
+                "shape": {
+                    "type": "string",
+                    "enum": [
+                        "square",
+                        "circle",
+                        "custom-diamond",
+                        "hexagon",
+                        "octagon",
+                        "cross",
+                        "diamond",
+                        "triangle-down",
+                        "triangle-up",
+                        "rhombus"
+                    ]
+                },
+                "fill": {
+                    "type": "string"
+                },
+                "size": {
+                    "type": "number"
+                },
+                "stroke": {
+                    "type": "string"
+                },
+                "stroke-dasharray": {
+                    "type": "string",
+                    "enum": [
+                        "0",
+                        "5,5",
+                        "5,10",
+                        "10,5",
+                        "5,1",
+                        "1,5",
+                        "2",
+                        "15,10,5",
+                        "15,10,5,10",
+                        "15,10,5,10,15"
+                    ]
+                },
+                "stroke-width": {
+                    "type": "number"
+                }
+            }
+        },
+        "edgeStyles": {
+            "type": "object",
+            "properties": {
+                "stroke": {
+                    "type": "string"
+                },
+                "stroke-dasharray": {
+                    "type": "string",
+                    "enum": [
+                        "0",
+                        "5,5",
+                        "5,10",
+                        "10,5",
+                        "5,1",
+                        "1,5",
+                        "2",
+                        "15,10,5",
+                        "15,10,5,10",
+                        "15,10,5,10,15"
+                    ]
+                },
+                "stroke-width": {
+                    "type": "number"
+                },
+                "marker-end-shape": {
+                    "type": "string",
+                    "enum": [
+                        "arrow",
+                        "arrow-short",
+                        "circle",
+                        "delta",
+                        "delta-short-1",
+                        "delta-short-2",
+                        "diamond",
+                        "diamond-short-1",
+                        "diamond-short-2",
+                        "half-bottom",
+                        "half-top",
+                        "t"
+                    ]
+                },
+                "marker-start-shape": {
+                    "type": "string",
+                    "enum": [
+                        "arrow",
+                        "arrow-short",
+                        "circle",
+                        "delta",
+                        "delta-short-1",
+                        "delta-short-2",
+                        "diamond",
+                        "diamond-short-1",
+                        "diamond-short-2",
+                        "half-bottom",
+                        "half-top",
+                        "t"
+                    ]
+                },
+                "curved": {
+                    "type": "boolean",
+                    "default": false
+                }
+            },
+            "required": [
+                "curved"
+            ]
+        }
+    }
+}
