@@ -142,9 +142,6 @@
                     ]
                 }
             },
-            "required": [
-                "operator"
-            ],
             "additionalProperties": false
         },
         "edgeRules": {
