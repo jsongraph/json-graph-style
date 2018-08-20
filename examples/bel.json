@@ -1,0 +1,487 @@
+﻿{
+  "canvas": {
+    "background-color": "#ffffff"
+  },
+  "nodes": [
+    {
+      "styles": {
+        "shape": "circle"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "p(",
+      "styles": {
+        "fill": "#00ffff",
+        "shape": "square"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "a(",
+      "styles": {
+        "fill": "#add8e6",
+        "shape": "rhombus"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "g(",
+      "styles": {
+        "fill": "#90ee90",
+        "shape": "circle"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "r(",
+      "styles": {
+        "fill": "#008000",
+        "shape": "circle"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "complex(",
+      "styles": {
+        "fill": "#0000cd",
+        "shape": "square"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "composite(",
+      "styles": {
+        "fill": "#e0ffff",
+        "shape": "square"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "m(",
+      "styles": {
+        "fill": "#008000",
+        "shape": "circle"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "bp(",
+      "styles": {
+        "fill": "#ff00ff",
+        "shape": "cross"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "path(",
+      "styles": {
+        "fill": "#ffa500",
+        "shape": "cross"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "tloc(",
+      "styles": {
+        "fill": "lavender",
+        "shape": "triangle-down"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "sec(",
+      "styles": {
+        "fill": "lavender",
+        "shape": "triangle-down"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "surf(",
+      "styles": {
+        "fill": "lavender",
+        "shape": "triangle-down"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "rxn(",
+      "styles": {
+        "fill": "#9370db",
+        "shape": "cross"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "deg(",
+      "styles": {
+        "fill": "#ffa500",
+        "shape": "square"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "chap(",
+      "styles": {
+        "fill": "#800080",
+        "shape": "triangle-up"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "kin(",
+      "styles": {
+        "fill": "#800080",
+        "shape": "triangle-up"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "tscript(",
+      "styles": {
+        "fill": "#800080",
+        "shape": "triangle-up"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "cat(",
+      "styles": {
+        "fill": "#800080",
+        "shape": "triangle-up"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "gtp(",
+      "styles": {
+        "fill": "#800080",
+        "shape": "triangle-up"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "act(",
+      "styles": {
+        "fill": "#800080",
+        "shape": "triangle-up"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "phos(",
+      "styles": {
+        "fill": "#800080",
+        "shape": "triangle-up"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "ribo(",
+      "styles": {
+        "fill": "#800080",
+        "shape": "triangle-up"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "tport(",
+      "styles": {
+        "fill": "#800080",
+        "shape": "triangle-up"
+      }
+    },
+    {
+      "attr": "label",
+      "operator": "has",
+      "compareValue": "pep(",
+      "styles": {
+        "fill": "#800080",
+        "shape": "triangle-up"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "attr": "relation",
+      "compareValue": "actsIn",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-width": 2,
+        "stroke-dasharray": "10,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "association",
+      "operator": "==",
+      "styles": {
+        "stroke": "#000000",
+        "stroke-dasharray": "2"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "biomarkerFor",
+      "operator": "==",
+      "styles": {
+        "stroke": "#000000",
+        "marker-end-shape": "arrow",
+        "stroke-dasharray": "2"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "decreases",
+      "operator": "==",
+      "styles": {
+        "stroke": "#000000",
+        "marker-end-shape": "circle",
+        "stroke-dasharray": "0"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "directlyDecreases",
+      "operator": "==",
+      "styles": {
+        "stroke": "#000000",
+        "stroke-width": 2,
+        "marker-end-shape": "circle",
+        "stroke-dasharray": "0"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "directlyIncreases",
+      "operator": "==",
+      "styles": {
+        "stroke": "#000000",
+        "stroke-width": 2,
+        "marker-end-shape": "arrow",
+        "stroke-dasharray": "0"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "hasComponent",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-width": 2,
+        "stroke-dasharray": "5,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "hasMember",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-width": 2,
+        "stroke-dasharray": "5,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "hasModification",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-width": 2,
+        "stroke-dasharray": "5,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "hasProduct",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-width": 2,
+        "stroke-dasharray": "5,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "hasVariant",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-width": 2,
+        "stroke-dasharray": "5,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "includes",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-width": 2,
+        "stroke-dasharray": "5,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "increases",
+      "operator": "==",
+      "styles": {
+        "stroke": "#000000",
+        "marker-end-shape": "arrow",
+        "stroke-dasharray": "0"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "isA",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-width": 2,
+        "stroke-dasharray": "5,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "negativeCorrelation",
+      "operator": "==",
+      "styles": {
+        "stroke": "#000000",
+        "marker-start-shape": "circle",
+        "marker-end-shape": "circle",
+        "stroke-dasharray": "2"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "orthologous",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "stroke-width": 2,
+        "stroke-dasharray": "5,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "positiveCorrelation",
+      "operator": "==",
+      "styles": {
+        "stroke": "#000000",
+        "marker-start-shape": "arrow",
+        "marker-end-shape": "arrow",
+        "stroke-dasharray": "2"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "prognosticBiomarkerFor",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-dasharray": "2"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "rateLimitingStepOf",
+      "operator": "==",
+      "styles": {
+        "stroke": "#000000",
+        "marker-end-shape": "arrow",
+        "stroke-width": 2,
+        "stroke-dasharray": "5,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "reactantIn",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-width": 2,
+        "stroke-dasharray": "5,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "subProcessOf",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-width": 2,
+        "stroke-dasharray": "5,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "transcribedTo",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-width": 2,
+        "stroke-dasharray": "10,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "translatedTo",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-width": 2,
+        "stroke-dasharray": "10,5"
+      }
+    },
+    {
+      "attr": "relation",
+      "compareValue": "translocates",
+      "operator": "==",
+      "styles": {
+        "stroke": "#808080",
+        "marker-end-shape": "diamond",
+        "stroke-width": 2,
+        "stroke-dasharray": "5,5"
+      }
+    }
+  ]
+}

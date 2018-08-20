@@ -1,0 +1,72 @@
+﻿{
+  "canvas": {
+    "background-color": "#ffffff"
+  },
+  "nodes": [
+    {
+      "styles": {
+        "fill": "#ffff99",
+        "stroke": "#666666",
+        "stroke-width": "1",
+        "shape": "square"
+      }
+    },
+    {
+      "attr": "SeedNode",
+      "operator": "==",
+      "compareValue": "1",
+      "styles": {
+        "fill": "#ccccff"
+      }
+    },
+    {
+      "attr": "KeyRegulatorPval",
+      "operator": "<",
+      "compareValue": "0.0010000000577123152",
+      "styles": {
+        "stroke": "#ff3333"
+      }
+    },
+    {
+      "attr": "DrugTarget",
+      "operator": "==",
+      "compareValue": "1",
+      "styles": {
+        "stroke-width": 2
+      }
+    },
+    {
+      "attr": "GWAS",
+      "operator": "==",
+      "compareValue": "1",
+      "styles": {
+        "shape": "hexagon"
+      }
+    },
+    {
+      "attr": "GWAS",
+      "operator": "==",
+      "compareValue": "2",
+      "styles": {
+        "shape": "custom-diamond"
+      }
+    },
+    {
+      "attr": "GWAS",
+      "operator": "==",
+      "compareValue": "3",
+      "styles": {
+        "shape": "octagon"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "styles": {
+        "stroke": "#800080",
+        "stroke-width": "1px",
+        "marker-end-shape": "arrow"
+      }
+    }
+  ]
+}
