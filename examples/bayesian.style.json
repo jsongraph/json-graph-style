@@ -1,0 +1,81 @@
+﻿{
+    "_key": "bayesian",
+    "default": false,
+    "style": {
+        "canvas": {
+            "background-color": "#ffffff"
+        },
+        "nodes": [{
+                "label": "default",
+                "styles": {
+                    "fill": "#ffff99",
+                    "stroke": "#666666",
+                    "stroke-width": "1",
+                    "shape": "square"
+                }
+            },
+            {
+                "label": "SeedNode",
+                "attr": "SeedNode",
+                "operator": "==",
+                "compareValue": "1",
+                "styles": {
+                    "fill": "#ccccff"
+                }
+            },
+            {
+                "label": "KeyRegulatorPval",
+                "attr": "KeyRegulatorPval",
+                "operator": "<",
+                "compareValue": "0.0010000000577123152",
+                "styles": {
+                    "stroke": "#ff3333"
+                }
+            },
+            {
+                "label": "DrugTarget",
+                "attr": "DrugTarget",
+                "operator": "==",
+                "compareValue": "1",
+                "styles": {
+                    "stroke-width": 2
+                }
+            },
+            {
+                "label": "GWAS1",
+                "attr": "GWAS",
+                "operator": "==",
+                "compareValue": "1",
+                "styles": {
+                    "shape": "hexagon"
+                }
+            },
+            {
+                "label": "GWAS2",
+                "attr": "GWAS",
+                "operator": "==",
+                "compareValue": "2",
+                "styles": {
+                    "shape": "custom-diamond"
+                }
+            },
+            {
+                "label": "GWAS3",
+                "attr": "GWAS",
+                "operator": "==",
+                "compareValue": "3",
+                "styles": {
+                    "shape": "octagon"
+                }
+            }
+        ],
+        "edges": [{
+            "label": "default",
+            "styles": {
+                "stroke": "#800080",
+                "stroke-width": "1px",
+                "marker-end-shape": "arrow"
+            }
+        }]
+    }
+}

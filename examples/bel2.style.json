@@ -1,0 +1,577 @@
+﻿{
+    "_key": "bel2",
+    "default": true,
+    "style": {
+        "canvas": {
+            "background-color": "#ffffff"
+        },
+        "nodes": [{
+                "label": "default",
+                "styles": {
+                    "shape": "circle"
+                }
+            },
+            {
+                "label": "abundance",
+                "attr": "label",
+                "operator": "has",
+                "compareValue": "/^a(|^abundance(/",
+                "styles": {
+                    "fill": "#add8e6",
+                    "shape": "rhombus"
+                }
+            },
+            {
+                "label": "activity",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^act(|^activity(/",
+                "styles": {
+                    "fill": "#800080",
+                    "shape": "triangle-up"
+                }
+            },
+            {
+                "label": "catalytic activity",
+                "attr": "label",
+                "operator": "has",
+                "compareValue": "ma(cat",
+                "styles": {
+                    "fill": "#800080",
+                    "shape": "triangle-up"
+                }
+            },
+            {
+                "label": "chaperone activity",
+                "attr": "label",
+                "operator": "has",
+                "compareValue": "ma(chap",
+                "styles": {
+                    "fill": "#800080",
+                    "shape": "triangle-up"
+                }
+            },
+            {
+                "label": "gtp bound activity",
+                "attr": "label",
+                "operator": "has",
+                "compareValue": "ma(gtp",
+                "styles": {
+                    "fill": "#800080",
+                    "shape": "triangle-up"
+                }
+            },
+            {
+                "label": "kinase activity",
+                "attr": "label",
+                "operator": "has",
+                "compareValue": "ma(kin",
+                "styles": {
+                    "fill": "#800080",
+                    "shape": "triangle-up"
+                }
+            },
+            {
+                "label": "peptidase activity",
+                "attr": "label",
+                "operator": "has",
+                "compareValue": "ma(pep",
+                "styles": {
+                    "fill": "#800080",
+                    "shape": "triangle-up"
+                }
+            },
+            {
+                "label": "phosphatase activity",
+                "attr": "label",
+                "operator": "has",
+                "compareValue": "ma(phos",
+                "styles": {
+                    "fill": "#800080",
+                    "shape": "triangle-up"
+                }
+            },
+            {
+                "label": "ribosylation activity",
+                "attr": "label",
+                "operator": "has",
+                "compareValue": "ma(ribo",
+                "styles": {
+                    "fill": "#800080",
+                    "shape": "triangle-up"
+                }
+            },
+            {
+                "label": "transcriptional activity",
+                "attr": "label",
+                "operator": "has",
+                "compareValue": "ma(tscript",
+                "styles": {
+                    "fill": "#800080",
+                    "shape": "triangle-up"
+                }
+            },
+            {
+                "label": "transcriptional activity",
+                "attr": "label",
+                "operator": "has",
+                "compareValue": "ma(transcript",
+                "styles": {
+                    "fill": "#800080",
+                    "shape": "triangle-up"
+                }
+            },
+            {
+                "label": "transport activity",
+                "attr": "label",
+                "operator": "has",
+                "compareValue": "ma(tport",
+                "styles": {
+                    "fill": "#800080",
+                    "shape": "triangle-up"
+                }
+            },
+            {
+                "label": "transport activity",
+                "attr": "label",
+                "operator": "has",
+                "compareValue": "ma(transport",
+                "styles": {
+                    "fill": "#800080",
+                    "shape": "triangle-up"
+                }
+            },
+            {
+                "label": "biological process",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^bp(|^biologicalProcess(/",
+                "styles": {
+                    "fill": "#ff00ff",
+                    "shape": "cross"
+                }
+            },
+            {
+                "label": "secretion",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^sec(|^cellSecretion(/",
+                "styles": {
+                    "fill": "lavender",
+                    "shape": "triangle-down"
+                }
+            },
+            {
+                "label": "cell surface expression",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^surf(|^cellSurfaceExpression(/",
+                "styles": {
+                    "fill": "lavender",
+                    "shape": "triangle-down"
+                }
+            },
+            {
+                "label": "complex",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^complex(|^complexAbundance(/",
+                "styles": {
+                    "fill": "#0000cd",
+                    "shape": "square"
+                }
+            },
+            {
+                "label": "composite",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^composite(|^compositeAbundance(/",
+                "styles": {
+                    "fill": "#e0ffff",
+                    "shape": "square"
+                }
+            },
+            {
+                "label": "degradation",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^deg(|^degradation(/",
+                "styles": {
+                    "fill": "#ffa500",
+                    "shape": "square"
+                }
+            },
+            {
+                "label": "gene",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^g(|^geneAbundance(/",
+                "styles": {
+                    "fill": "#90ee90",
+                    "shape": "circle"
+                }
+            },
+            {
+                "label": "microRNA",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^m(|^microRNAAbundance(/",
+                "styles": {
+                    "fill": "#008000",
+                    "shape": "circle"
+                }
+            },
+            {
+                "label": "pathology",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^path(/^pathology(/",
+                "styles": {
+                    "fill": "#ffa500",
+                    "shape": "cross"
+                }
+            },
+            {
+                "label": "population",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^pop(|^populationAbundance(/",
+                "styles": {
+                    "fill": "#ffa500",
+                    "shape": "cross"
+                }
+            },
+            {
+                "label": "protein",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^p(|^proteinAbundance(/",
+                "styles": {
+                    "fill": "#00ffff",
+                    "shape": "square"
+                }
+            },
+            {
+                "label": "reaction",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/rxn(|^reaction(/",
+                "styles": {
+                    "fill": "#9370db",
+                    "shape": "cross"
+                }
+            },
+            {
+                "label": "RNA",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^r(|^rnaAbundance(/",
+                "styles": {
+                    "fill": "#008000",
+                    "shape": "circle"
+                }
+            },
+            {
+                "label": "translocation",
+                "attr": "label",
+                "operator": "regex",
+                "compareValue": "/^tloc(|^translocation(/",
+                "styles": {
+                    "fill": "lavender",
+                    "shape": "triangle-down"
+                }
+            }
+        ],
+        "edges": [{
+                "label": "analogous",
+                "attr": "relation",
+                "compareValue": "analogous",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#000000",
+                    "stroke-dasharray": "2"
+                }
+            },
+            {
+                "label": "association",
+                "attr": "relation",
+                "compareValue": "association",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#000000",
+                    "stroke-dasharray": "2"
+                }
+            },
+            {
+                "label": "biomarker for",
+                "attr": "relation",
+                "compareValue": "biomarkerFor",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#000000",
+                    "marker-end-shape": "arrow",
+                    "stroke-dasharray": "2"
+                }
+            },
+            {
+                "label": "causes no change",
+                "attr": "relation",
+                "compareValue": "causesNoChange",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#000000",
+                    "marker-end-shape": "arrow",
+                    "stroke-dasharray": "2"
+                }
+            },
+            {
+                "label": "decreases",
+                "attr": "relation",
+                "compareValue": "decreases",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#000000",
+                    "marker-end-shape": "circle",
+                    "stroke-dasharray": "0"
+                }
+            },
+            {
+                "label": "directly decreases",
+                "attr": "relation",
+                "compareValue": "directlyDecreases",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#000000",
+                    "stroke-width": 2,
+                    "marker-end-shape": "circle",
+                    "stroke-dasharray": "0"
+                }
+            },
+            {
+                "label": "directly increases",
+                "attr": "relation",
+                "compareValue": "directlyIncreases",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#000000",
+                    "stroke-width": 2,
+                    "marker-end-shape": "arrow",
+                    "stroke-dasharray": "0"
+                }
+            },
+            {
+                "label": "has activity",
+                "attr": "relation",
+                "compareValue": "hasActivity",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "marker-end-shape": "diamond",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "5,5"
+                }
+            },
+            {
+                "label": "has component",
+                "attr": "relation",
+                "compareValue": "hasComponent",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "marker-end-shape": "diamond",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "5,5"
+                }
+            },
+            {
+                "label": "has member",
+                "attr": "relation",
+                "compareValue": "hasMember",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "marker-end-shape": "diamond",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "5,5"
+                }
+            },
+            {
+                "label": "has modification",
+                "attr": "relation",
+                "compareValue": "hasModification",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "marker-end-shape": "diamond",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "5,5"
+                }
+            },
+            {
+                "label": "has product",
+                "attr": "relation",
+                "compareValue": "hasProduct",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "marker-end-shape": "diamond",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "5,5"
+                }
+            },
+            {
+                "label": "has reactant",
+                "attr": "relation",
+                "compareValue": "reactantIn",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "marker-end-shape": "diamond",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "5,5"
+                }
+            },
+            {
+                "label": "has variant",
+                "attr": "relation",
+                "compareValue": "hasVariant",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "marker-end-shape": "diamond",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "5,5"
+                }
+            },
+            {
+                "label": "increases",
+                "attr": "relation",
+                "compareValue": "increases",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#000000",
+                    "marker-end-shape": "arrow",
+                    "stroke-dasharray": "0"
+                }
+            },
+            {
+                "label": "is a",
+                "attr": "relation",
+                "compareValue": "isA",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "marker-end-shape": "diamond",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "5,5"
+                }
+            },
+            {
+                "label": "negative correlation",
+                "attr": "relation",
+                "compareValue": "negativeCorrelation",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#000000",
+                    "marker-start-shape": "circle",
+                    "marker-end-shape": "circle",
+                    "stroke-dasharray": "2"
+                }
+            },
+            {
+                "label": "orthologous",
+                "attr": "relation",
+                "compareValue": "orthologous",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "5,5"
+                }
+            },
+            {
+                "label": "positive correlation",
+                "attr": "relation",
+                "compareValue": "positiveCorrelation",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#000000",
+                    "marker-start-shape": "arrow",
+                    "marker-end-shape": "arrow",
+                    "stroke-dasharray": "2"
+                }
+            },
+            {
+                "label": "prognostic biomarkerFor",
+                "attr": "relation",
+                "compareValue": "prognosticBiomarkerFor",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "marker-end-shape": "diamond",
+                    "stroke-dasharray": "2"
+                }
+            },
+            {
+                "label": "rate limiting step of",
+                "attr": "relation",
+                "compareValue": "rateLimitingStepOf",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#000000",
+                    "marker-end-shape": "arrow",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "5,5"
+                }
+            },
+            {
+                "label": "regulates",
+                "attr": "relation",
+                "compareValue": "regulates",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "marker-end-shape": "diamond",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "5,5"
+                }
+            },
+            {
+                "label": "subprocess of",
+                "attr": "relation",
+                "compareValue": "subProcessOf",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "marker-end-shape": "diamond",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "5,5"
+                }
+            },
+            {
+                "label": "transcribed to",
+                "attr": "relation",
+                "compareValue": "transcribedTo",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "marker-end-shape": "diamond",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "10,5"
+                }
+            },
+            {
+                "label": "translated to",
+                "attr": "relation",
+                "compareValue": "translatedTo",
+                "operator": "==",
+                "styles": {
+                    "stroke": "#808080",
+                    "marker-end-shape": "diamond",
+                    "stroke-width": 2,
+                    "stroke-dasharray": "10,5"
+                }
+            }
+        ]
+    }
+}
